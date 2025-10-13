@@ -7,6 +7,8 @@ class FizzBuzz:
                     res += "Fizz"
                 elif i % 5 == 0:
                     res += "Buzz"
+                elif i % 15 == 0:
+                    res += "FrisBee"
                 else:
                     res += str(i)
         return res
