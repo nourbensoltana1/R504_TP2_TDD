@@ -1,5 +1,5 @@
 import unittest
-from main omport crypt
+from main import crypt
 
 class TestCrypt(unittest.TestCase):
     def test_crypt-exists(self):
