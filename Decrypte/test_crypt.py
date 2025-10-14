@@ -7,7 +7,7 @@ class TestCrypt(unittest.TestCase):
         message = "abc"
         result = crypt(message)
         print(result)
-        self.assertIsNotNone(result)
+        self.assertIEqual(result,'bcd')
 
 if __name__ == "__main__":
     unittest.main()
