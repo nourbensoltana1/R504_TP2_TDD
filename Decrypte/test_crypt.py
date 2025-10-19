@@ -5,7 +5,7 @@ class TestCrypt(unittest.TestCase):
     def test_crypt(self):
         "Vérifie que la fonction crypt(message) existe et renvoie quelque chose"
         message = "ab9"
-        result = crypt(message,100)
+        result = crypt(message,2)
         print(result)
         self.assertEqual(result,'cda2')
 
