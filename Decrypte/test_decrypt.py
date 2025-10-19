@@ -7,7 +7,7 @@ class TestDecrypt(unittest.TestCase):
         message=" ce"
         crypto = crypt(message,3)
         print (crypto)
-        result = decrypt(crypto,3)
+        result = decrypt(crypto)
         print(result)
         self.assertEqual(result,message)
 

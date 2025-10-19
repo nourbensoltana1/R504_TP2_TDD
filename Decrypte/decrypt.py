@@ -1,6 +1,7 @@
 import string
-def decrypt(message,pas):
+def decrypt(message):
     caracteres = string.ascii_letters + string.punctuation + string.digits + " "
+    pas=int(message[len(message)-1])
     message=message[:len(message)-1]
     result=""
     for i in message:
