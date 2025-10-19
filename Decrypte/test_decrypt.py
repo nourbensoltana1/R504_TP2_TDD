@@ -3,10 +3,10 @@ from decrypt import decrypt
 
 class TestDecrypt(unittest.TestCase):
     def test_Decrypt(self):
-        crypto = "bcd"
+        crypto = "acd"
         result = decrypt(crypto)
         print(result)
-        self.assertEqual(result,'abc')
+        self.assertEqual(result,' bc')
 
 if __name__ == "__main__":
     unittest.main()
