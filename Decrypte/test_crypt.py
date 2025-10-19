@@ -4,10 +4,10 @@ from crypt import crypt
 class TestCrypt(unittest.TestCase):
     def test_crypt(self):
         "Vérifie que la fonction crypt(message) existe et renvoie quelque chose"
-        message = "abc"
+        message = "ab9"
         result = crypt(message,2)
         print(result)
-        self.assertEqual(result,'cde2')
+        self.assertEqual(result,'cda')
 
 if __name__ == "__main__":
     unittest.main()
