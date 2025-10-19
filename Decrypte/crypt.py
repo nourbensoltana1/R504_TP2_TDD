@@ -4,8 +4,8 @@ def crypt(message,pas):
     result=""
     for i in message:
         position=caracteres.find(i)
-        if position<len(caracteres)-1:
+        if position<len(caracteres)-pas:
             result+=caracteres[position+pas]
         else:
-            result+='a'
+            result+=caracteres[0+pas-(len(caracteres)-position)]
     return(result+str(pas))
