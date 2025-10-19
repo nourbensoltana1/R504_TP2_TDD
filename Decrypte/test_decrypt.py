@@ -1,12 +1,15 @@
 import unittest
 from decrypt import decrypt
+from crypt import crypt
 
 class TestDecrypt(unittest.TestCase):
     def test_Decrypt(self):
-        crypto = "cfh"
+        message=" ce"
+        crypto = crypt(message,3)
+        print (crypto)
         result = decrypt(crypto,3)
         print(result)
-        self.assertEqual(result,' ce')
+        self.assertEqual(result,message)
 
 if __name__ == "__main__":
     unittest.main()
